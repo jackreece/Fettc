@@ -1,4 +1,13 @@
 Fettc::Application.routes.draw do
+  #get "static_pages/arbitrarything"
+  root to: "static_pages#apples" #directs the root of the website to the page "static_pages/home"
+
+  get "static_pages/home"
+
+  get "static_pages/about"
+
+  get "static_pages/apples"
+
   resources :notifications
 
 
